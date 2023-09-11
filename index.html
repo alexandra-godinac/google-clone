@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Search</title>
+<style>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.alt-pages {
+    display: flex;
+    justify-content: end;
+}
+
+.imgsearch{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:darkgrey;
+    font-size: 18px;
+}
+
+.advanced{
+    padding: 20px;
+}
+
+input {
+    color: black;
+    border-color: darkgrey;
+    padding: 15px 100px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 10rem 10rem 10rem;
+    display:flex;
+    flex-direction: column;
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+.google-button{
+    padding: 10px 20px;
+    margin-right: 2px;
+}
+.search-bar{
+    margin-right: 5px;
+    border-radius: 30px;
+}
+.buttons{
+    display:flex;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.lucky-button{
+    padding: 10px 20px;
+    margin-left: 2px;
+}
+</style>
+</head>
+    <body>
+    <div class="alt-pages">
+        <div class="imgsearch"><a href="imgsearch.html" target="_blank">Google Image Search</a> </div>
+        <div class="advanced"><a href="advanced.html" target="_blank">Google Advanced Search</a> </div>
+    </div>
+    <div class="search-container">
+    <img class="google-logo" src="https://companieslogo.com/img/orig/GOOG_BIG-63cbd9c6.png?t=1633218227" width="400px;">
+
+        <form action="https://www.google.com/search">
+            <input class="search-bar" type="text" name="q">
+        <div class="buttons">
+            <input class="google-button" type="submit" value="Google Search">
+            <input class="lucky-button" type="submit" value="I'm Feeling Lucky" name="btnI">
+        </div>
+        </form>
+    </div>
+    </body>
+</html>

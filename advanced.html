@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+input {
+    color: black;
+    border-color: darkgrey;
+    padding: 15px 100px;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 10rem 2rem 10rem;
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 0rem 2rem;
+}
+.google-button{
+    padding: 10px 20px;
+    margin-left: 5px;
+}
+.search-bar{
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color:darkgrey;
+    font-size: 18px;
+}
+.go-back{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+.advanced-input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    line-height: 3;
+}
+p{
+    font-size: 18px;
+    margin-left: 2rem;
+}
+.as-q-button{
+    padding:10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: #4e87f2;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+    <div class="go-back">
+        <div class="search-page"><a href="index.html">Google Search</a> </div>
+    </div>
+
+    <div class="search-container">
+        <img class="google-logo" src="https://companieslogo.com/img/orig/GOOG_BIG-63cbd9c6.png?t=1633218227" width="400px;">
+    
+            <form action="https://www.google.com/advanced_search">
+                <input class="search-bar" type="text" name="q">
+                <input class="google-button" type="submit" value="Google Search">
+            </form>
+        </div>
+    
+    <!--advanced search form-->
+    <div class="advanced-form">
+        <p>Find pages with...</p>
+        <form class="advanced-input-container" action="https://www.google.com/search?as_q">
+        <div class="first-input">
+            <label for="these-words">all these words:</label>
+            <input name="as_q" type="text" id="these-words">
+        </div>
+        <div class="second-input">
+            <label for="exact-w-p">the exact word or phrase:</label>
+            <input name="as_epq" type="text" id="exact-w-p">
+        </div>
+        <div class="third-input">
+            <label for="any-words">any of these words:</label>
+            <input name="as_oq" type="text" id="any_words">
+        </div>
+        <div class="fourth-input">
+            <label for="none-words">none of these words:</label>
+            <input name="as_eq" type="text" id="none-words">
+        </div>
+        <button type="submit" name="as_q" class="as-q-button">Advanced Search</button>
+        </form>
+    </div>
+</body>
+</html>
